@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confesión de Amor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff6f91;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            flex: 1 0 40%;
+            max-width: 150px;
+        }
+        button:hover {
+            background-color: #ff477e;
+            transform: scale(1.05);
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1em;
+            }
+            button {
+                flex: 1 0 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            button {
+                flex: 1 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Hola 💖</h1>
+        <p>
+            Durante todo este tiempo, he reflexionado sobre lo que hemos vivido y sobre mis propios errores. 
+            Sé que no siempre fui la persona que merecías, pero cada experiencia me ha hecho comprender lo importante 
+            que eres para mí y cuánto deseo crecer a tu lado. Ahora quiero demostrarte, no con palabras, sino con acciones, 
+            que estoy listo para dar lo mejor de mí.<br><br>
+            ¿Me darías la oportunidad de caminar juntos como pareja y escribir una historia más hermosa de lo que pudimos imaginar?
+        </p>
+        <img src="https://res.cloudinary.com/black-royal/image/upload/v1733720405/nfjgvbeaivu50nravvpy.gif" alt="Amor">
+        <div class="button-container">
+            <button onclick="showYesMessage()">Sí</button>
+            <button onclick="showNoMessage()">No</button>
+        </div>
+        <p id="response" class="hidden"></p>
+    </div>
+    <script>
+        function showYesMessage() {
+            const response = document.getElementById('response');
+            response.textContent = "¡Te amo con todo mi corazón! MONITA HERMOSAAAAAAAAAA ❤️";
+            response.classList.remove('hidden');
+        }
+
+        function showNoMessage() {
+            const response = document.getElementById('response');
+            response.textContent = "DUREN :,l tu y tus amigos del valorat y los weyes de mundos raros de ERP 💔";
+            response.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
